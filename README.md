@@ -8,7 +8,7 @@ This repository contains MATLAB code to simulate the shear-driven behavior of ep
 
 This model simulates cellular mechanics under simple shear deformation, capturing phenomena such as solidification, yield stress, and mechanical plasticity.
 
-The primary script for the simulation is `run_shear_experiment.m`. This script initializes the system, applies shear strain incrementally, and saves outputs for each step. The simulation generates PNG images at each shear step, showing the state of the Voronoi tessellation. Images are saved using the naming convention:
+The primary script for the simulation is `run_shear_experiment.m`. This script initializes the system, applies shear strain incrementally, and generates PNG images at each shear step, showing the state of the Voronoi tessellation. Images are saved using the naming convention:
 
 qs_ka<ka_value>_N<N_cell>_p<p0_value>_gamma<gamma_value>.png
 
