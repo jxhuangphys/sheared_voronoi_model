@@ -20,3 +20,9 @@ The code is tested with MATLAB R2021a and later versions.
 - **Shear Simulation**: Incremental application of shear strain to a Voronoi tessellation representing cellular monolayers.
 - **Visualization**: Generation of images for each shear step showing cell configurations and Voronoi tessellation structure.
 - **Random Initialization with Reproducibility**: Configurable random seed to initialize cell positions consistently.
+
+For any questions regarding the code, please contact Junxiang Huang (jxhuangphys@gmail.com).
+
+You are also welcome to contact the PI for shared interests:
+
+Max Bi (email: d.bi@northeastern.edu, homepage: https://sites.google.com/view/dapengbi)
