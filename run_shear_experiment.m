@@ -34,6 +34,8 @@ center_xy = rand(N_cell, 2) * box_size;
 
 gamma = 0; % Initial shear strain
 
+data = struct('center_xy',[],'cell_chain',[],'vertex_position',[],'current_strain',[]);% structure that store the simulation data
+
 % Main loop to apply incremental shear and record results
 for i_s = 1:shear_step + 1
     % Relax cell positions using FIRE after applying shear
@@ -41,6 +43,12 @@ for i_s = 1:shear_step + 1
      mean_force, area_list, perimeter_list] = ...
      minimize_shear_voronoi_FIRE(center_xy, gamma, K_A, A0_list, K_P, P0_list, ...
      fire_step, force_tol);
+
+     % store data
+    data(i_s).center_xy = center_xy;
+    data(i_s).cell_chain = cell_chain;
+    data(i_s).vertex_position = vertex_position;
+    data(i_s).gamma = gamma;
 
 	% Draw the current state of the Voronoi tessellation
     figure; % Create a new figure for each state
